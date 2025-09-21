@@ -1,0 +1,28 @@
+{
+  "name": "linkwarden-bulk-import",
+  "version": "0.1.0",
+  "description": "Linkwarden Bulk Import",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idelsink/linkwarden-bulk-import.git"
+  },
+  "author": "Ingmar Delsink",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/idelsink/linkwarden-bulk-import/issues"
+  },
+  "homepage": "https://github.com/idelsink/linkwarden-bulk-import",
+  "dependencies": {
+    "@picocss/pico": "^2.1.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "vite": "^7.1.6"
+  }
+}

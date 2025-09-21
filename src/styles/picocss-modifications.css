@@ -1,0 +1,7 @@
+:root {
+  --pico-font-size: 100%; /* Original: 100% - 125% */
+  --pico-line-height: 1.25; /* Original: 1.5 */
+  --pico-form-element-spacing-vertical: 0.5rem; /* Original: 1rem */
+  --pico-form-element-spacing-horizontal: 1rem; /* Original: 1.25rem */
+  --pico-border-radius: 0.375rem; /* Original: 0.25rem */
+}

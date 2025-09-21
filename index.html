@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="og-image.png" />
+    <title>Linkwarden Bulk Import</title>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <hgroup>
+          <h1>
+            Linkwarden bulk import
+          </h1>
+          <p>
+            Interim bulk URL import tool while
+            <a
+              target="_blank"
+              href="https://github.com/linkwarden/linkwarden/issues/1049"
+            >
+              Linkwarden #1049
+            </a>
+            is in progress
+          </p>
+        </hgroup>
+      </header>
+
+      <article name="bulk-import">
+        <fieldset>
+          <label>
+            🌐 Linkwarden URL
+            <input
+              id="baseUrl"
+              name="baseUrl"
+              placeholder="https://linkwarden.example.com"
+            />
+            <small>
+              Cross-origin requests are required, see
+              <a
+                href="https://github.com/idelsink/linkwarden-bulk-import?tab=readme-ov-file#gear-cors-configuration"
+                target="_blank"
+              >
+                CORS configuration
+              </a>
+            </small>
+          </label>
+          <label>
+            🔑Access token
+            <input
+              id="apiKey"
+              type="password"
+              placeholder="Your access token"
+            />
+            <small>Create one at: account > settings > access tokens</small>
+          </label>
+
+          <label>
+            Paste one URL per line
+            <textarea
+              placeholder="https://example.com &#10;https://example.net &#10;https://example.org &#10;https://example.edu"
+              id="urls"
+            ></textarea>
+          </label>
+        </fieldset>
+
+        <button class="secondary" id="saveSettings">Save Settings</button>
+        <button id="bulkImport">Import</button>
+
+        <hr />
+        <progress id="progress" value="0" max="0"></progress>
+        <div id="status"></div>
+      </article>
+
+      <footer>
+        <a
+          href="https://github.com/idelsink/linkwarden-bulk-import"
+          target="_blank"
+          id="github-star"
+        >
+          ⭐ Star on GitHub
+        </a>
+      </footer>
+    </main>
+
+    <script type="module" src="src/main.mjs"></script>
+  </body>
+</html>
