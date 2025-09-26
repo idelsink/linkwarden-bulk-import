@@ -1,2 +1,6 @@
 [tools]
-npm = "11.5.2"
+npm = "11.6.1"
+node = "24.9.0"
+
+[tasks.build-container]
+run = "docker build . -t linkwarden-bulk-import:latest"
